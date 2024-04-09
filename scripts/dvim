@@ -1,5 +1,5 @@
 #!/bin/bash
 
 docker container run --rm -it \
-    --mount type=bind,source="$(pwd)",destination="${HOME}/documents" \
+    --mount type=bind,source="$(pwd)",destination="${HOME}/workspace" \
     docker-vim:latest /bin/bash
