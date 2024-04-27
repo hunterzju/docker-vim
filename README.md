@@ -19,7 +19,7 @@ To run the container cd to the top directory that has the files you wish to edit
 container run command below passing in the fileneme.
 
 Using the dvim script:  
-`<path to docker-vim>/scripts/dvim <filename>`
+`cd <path to project> && <path to docker-vim>/scripts/dvim`
 
 OR
 
@@ -51,7 +51,15 @@ were easy to add and why they are here. Some plugins want fancy fonts such as po
 case you will need to install the powerline fonts in the container by modifying the Dockerfile and adding the plugin to
 vimrc along with any configuration that the plugin requires, then build, and run.
 
+## The vim_runtime
+In the container, the [vim_runtime](https://github.com/amix/vimrc) is used to manage the config and plugins. And the
+my_configs.vim file contains some manual configs. You can change it as needed.
+
+
 ## Reference
+docker-vim:
+https://github.com/zackeryf/docker-vim
+
 NERDTree:  
 https://vimawesome.com/plugin/nerdtree-red  
 https://github.com/preservim/nerdtree
